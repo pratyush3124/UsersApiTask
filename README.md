@@ -1,6 +1,7 @@
 # UsersApiTask
 
-A CRUD & REST api to query user data
+A CRUD & REST api to query user data <br>
+You can go to the deployed site here https://users-api-ecell.herokuapp.com/.
 
 ## Setup
 
