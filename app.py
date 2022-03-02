@@ -60,8 +60,7 @@ def modify_user(userId):
             users = json.load(jsonFile)
             jsonFile.close()
             return {"users":users}
-
-        return "No such user"
+    return "No such user"
 
 # create new users
 @my_app.route("/users/createUser", methods=['POST'])
