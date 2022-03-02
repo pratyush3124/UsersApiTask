@@ -56,9 +56,8 @@ def modify_user(userId):
             if "password" in request.json.keys():
                 user["password"] = request.json["password"]
 
-            jsonFile = open("./users.json", "r")
-            users = json.load(jsonFile)
-            jsonFile.close()
+            with open("./users.josn", "w") as wf:
+                json.dump(users, wf)
             return {"users":users}
     return "No such user"
 
